@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CustomClothingOrderManager"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.UpdateOderStatus"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewAllMessages"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CusChat"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CustomerChatList"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CustomerRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CustomerRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Measurement"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OderReqTailor"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OderRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewAllTailorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ClothingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatList"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Tailor_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TailorLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Login"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCxqYuTTCppHb0PrUDaeSl_R1TJTCArCZc" />
+
+        
+        <activity
+            android:name=".ui.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ui.MeasurementInput"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboardOder"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OderDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.odersTrack"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Order_dashboard"
+            android:exported="false" />
+    </application>
+
+</manifest>

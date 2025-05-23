@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.OderRequest">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/shoptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:text="Oder"
+            android:textSize="60px"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/bottomBorder"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#D3D3D3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/nametextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:text="Name :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/textView50"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Mens shirt"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_fabric_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.631"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.11" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fabric Material :"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_fabric_material"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/spinner_fabric_material" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Color :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Note :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <EditText
+            android:id="@+id/colorText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Enter color"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/spinner_fabric_material" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nametextView"
+            app:layout_constraintStart_toStartOf="@+id/editTextNote" />
+
+        <EditText
+            android:id="@+id/phoneText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Phone Number "
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/phonetextView"
+            app:layout_constraintStart_toStartOf="@+id/nameText" />
+
+        <EditText
+            android:id="@+id/editTextNote"
+            android:layout_width="177dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="22dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="top|start"
+            android:hint="Enter your notes here..."
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="5"
+            android:overScrollMode="always"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/colorText"
+            app:layout_constraintTop_toBottomOf="@+id/colorText" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Customer Information:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView49"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNote" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="Address Information:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView50"
+            app:layout_constraintTop_toBottomOf="@+id/phonetextView" />
+
+        <TextView
+            android:id="@+id/phonetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Phone Number :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/nametextView"
+            app:layout_constraintTop_toBottomOf="@+id/nametextView" />
+
+        <TextView
+            android:id="@+id/phonetextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Street :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/textView57"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <TextView
+            android:id="@+id/phonetextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Country :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/citytextView"
+            app:layout_constraintTop_toBottomOf="@+id/citytextView" />
+
+        <EditText
+            android:id="@+id/streetText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Enter Street"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/phonetextView2"
+            app:layout_constraintStart_toStartOf="@+id/phoneText" />
+
+        <TextView
+            android:id="@+id/citytextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="City :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/phonetextView2"
+            app:layout_constraintTop_toBottomOf="@+id/phonetextView2" />
+
+        <EditText
+            android:id="@+id/cityText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Enter City"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/citytextView"
+            app:layout_constraintStart_toStartOf="@+id/streetText" />
+
+        <EditText
+            android:id="@+id/countryText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-8dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Enter Country"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/phonetextView3"
+            app:layout_constraintStart_toStartOf="@+id/cityText" />
+
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countryText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

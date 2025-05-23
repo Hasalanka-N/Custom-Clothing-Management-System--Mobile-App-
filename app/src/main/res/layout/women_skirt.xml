@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/backarrow" />
+
+            <TextView
+                android:id="@+id/shoptxt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Measurements"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/bottomBorder"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/measurements_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Skirt Measurements"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/label_waist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waist Size (cm)"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/waist_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Waist Size"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/label_hip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hip Size (cm)"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/hip_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Hip Size"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/label_skirt_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skirt Length (cm)"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/skirt_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Skirt Length"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/label_hem_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hem Width (cm)"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/hem_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Hem Width"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

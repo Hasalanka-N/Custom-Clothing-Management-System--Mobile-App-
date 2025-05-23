@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231274322171",
+    "project_id": "custom-clothing-order",
+    "storage_bucket": "custom-clothing-order.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231274322171:android:cf53d9a307d35aa4c7b85e",
+        "android_client_info": {
+          "package_name": "com.example.custom_clothing_order_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkagruDncRUh2OoA8uSByZHhuCXXtfd8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,109 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_rectangle"
+    android:backgroundTint="#FFFFFF">
+
+    <TextView
+        android:id="@+id/orderIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:textSize="60px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="@+id/itemPriceTextView"
+        app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Item"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/orderIdTextView"
+        app:layout_constraintTop_toBottomOf="@+id/orderIdTextView" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Client"
+        app:layout_constraintStart_toStartOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/oderDatetxt"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/itemPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/oderDatetxt"
+        app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:padding="4dp"
+        android:text="Completed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/itemNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/orderIdTextView" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Price"
+        app:layout_constraintStart_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="John"
+        app:layout_constraintEnd_toEndOf="@+id/itemNameTextView"
+        app:layout_constraintTop_toTopOf="@+id/textView38" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

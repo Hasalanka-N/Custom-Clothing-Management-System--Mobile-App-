@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tailorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tailor Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tailorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/specializations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specializations"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/imagePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image Path"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
